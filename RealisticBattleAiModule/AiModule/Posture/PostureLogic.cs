@@ -203,7 +203,11 @@ namespace RBMAI
                                 if (defenderPosture != null)
                                 {
                                     float postureDmg = calculateDefenderPostureDamage(victimAgent, attackerAgent, absoluteDamageModifier, 0.85f, ref collisionData, attackerWeapon, comHitModifier);
+                                    if ( attackerWeapon.CurrentUsageItem.WeaponClass == WeaponClass.TwoHandedMace)
+                                    {defenderPosture.posture = defenderPosture.posture - 2f * postureDmg;}
+                                    else{
                                     defenderPosture.posture = defenderPosture.posture - postureDmg;
+                                    }
                                     addPosturedamageVisual(attackerAgent, victimAgent);
                                     if (defenderPosture.posture <= 0f)
                                     {
@@ -277,7 +281,11 @@ namespace RBMAI
                                 if (defenderPosture != null)
                                 {
                                     float postureDmg = calculateDefenderPostureDamage(victimAgent, attackerAgent, absoluteDamageModifier, 0.5f, ref collisionData, attackerWeapon, comHitModifier);
+                                    if ( attackerWeapon.CurrentUsageItem.WeaponClass == WeaponClass.TwoHandedMace)
+                                    {defenderPosture.posture = defenderPosture.posture - 2f * postureDmg;}
+                                    else{
                                     defenderPosture.posture = defenderPosture.posture - postureDmg;
+                                    }
                                     addPosturedamageVisual(attackerAgent, victimAgent);
                                     if (defenderPosture.posture <= 0f)
                                     {
@@ -356,7 +364,11 @@ namespace RBMAI
                                 {
                                     float postureDmg;
                                     postureDmg = calculateDefenderPostureDamage(victimAgent, attackerAgent, absoluteDamageModifier, 0.8f, ref collisionData, attackerWeapon, comHitModifier);
+                                    if ( attackerWeapon.CurrentUsageItem.WeaponClass == WeaponClass.TwoHandedMace)
+                                    {defenderPosture.posture = defenderPosture.posture - 2f * postureDmg;}
+                                    else{
                                     defenderPosture.posture = defenderPosture.posture - postureDmg;
+                                    }
                                     addPosturedamageVisual(attackerAgent, victimAgent);
                                     if (defenderPosture.posture <= 0f)
                                     {
@@ -406,7 +418,11 @@ namespace RBMAI
                                 if (defenderPosture != null)
                                 {
                                     float postureDmg = calculateDefenderPostureDamage(victimAgent, attackerAgent, absoluteShieldDamageModifier, 1f, ref collisionData, attackerWeapon, comHitModifier);
+                                    if ( attackerWeapon.CurrentUsageItem.WeaponClass == WeaponClass.TwoHandedMace)
+                                    {defenderPosture.posture = defenderPosture.posture - 2f * postureDmg;}
+                                    else{
                                     defenderPosture.posture = defenderPosture.posture - postureDmg;
+                                    }
                                     addPosturedamageVisual(attackerAgent, victimAgent);
                                     float healthDamage = calculateHealthDamage(attackerWeapon, attackerAgent, victimAgent, postureDmg, __result, victimAgent);
                                     if (defenderPosture.posture <= 0f)
@@ -461,7 +477,11 @@ namespace RBMAI
                                 if (defenderPosture != null)
                                 {
                                     float postureDmg = calculateDefenderPostureDamage(victimAgent, attackerAgent, absoluteShieldDamageModifier, 1f, ref collisionData, attackerWeapon, comHitModifier);
+                                    if ( attackerWeapon.CurrentUsageItem.WeaponClass == WeaponClass.TwoHandedMace)
+                                    {defenderPosture.posture = defenderPosture.posture - 2f * postureDmg;}
+                                    else{
                                     defenderPosture.posture = defenderPosture.posture - postureDmg;
+                                    }
                                     addPosturedamageVisual(attackerAgent, victimAgent);
                                     if (defenderPosture.posture <= 0f)
                                     {
@@ -513,7 +533,11 @@ namespace RBMAI
                                 if (defenderPosture != null)
                                 {
                                     float postureDmg = calculateDefenderPostureDamage(victimAgent, attackerAgent, absoluteShieldDamageModifier, 0.8f, ref collisionData, attackerWeapon, comHitModifier);
+                                    if ( attackerWeapon.CurrentUsageItem.WeaponClass == WeaponClass.TwoHandedMace)
+                                    {defenderPosture.posture = defenderPosture.posture - 2f * postureDmg;}
+                                    else{
                                     defenderPosture.posture = defenderPosture.posture - postureDmg;
+                                    }
                                     addPosturedamageVisual(attackerAgent, victimAgent);
                                     if (defenderPosture.posture <= 0f)
                                     {
